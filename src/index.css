@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -54,6 +57,7 @@ body {
   margin: 0;
 }
 
+
 #root {
   width: 100vw;
   max-width: 100%;
@@ -71,6 +75,41 @@ h2 {
   font-family: var(--heading);
   font-weight: 500;
   color: var(--text-h);
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  background: linear-gradient(
+    270deg,
+    #ff0000,
+    #ff7a00,
+    #ffd500,
+    #00ff2a,
+    #00c3ff,
+    #2a00ff,
+    #ff00ea,
+    #ff0000
+  );
+  background-size: 1600% 1600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbowFlow 8s ease infinite;
+  letter-spacing: 2px;
+  padding: 30px;
+}
+
+@keyframes rainbowFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 h1 {
@@ -109,3 +148,27 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+li {
+  margin-bottom: 8px;
+  margin-right: 10px;
+}
+
+li a {
+  text-decoration: none;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: larger;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -.5px;
+  transition: all 0.3s ease;
+
+}
+
+li a:hover {
+  color: rgb(111, 132, 192);
+  font-size: x-large;
+}
+
+
