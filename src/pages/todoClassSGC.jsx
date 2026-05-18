@@ -11,14 +11,14 @@ const TodoClassSGC = () => {
     }
 
     const onClick = () => {
-        if (newTask.trim() === "") return; // evita tareas vacías
+        if (newTask.trim() === "") return; 
         const newTasks = [...tasks, { id: Date.now(), text: newTask }];
         setTasks(newTasks);
-        setNewTask("") // ✅ borra el input al guardar
+        setNewTask("") 
     }
 
     const onDelete = (id) => {
-        setTasks(tasks.filter(task => task.id !== id)); // ✅ elimina la tarea
+        setTasks(tasks.filter(task => task.id !== id)); 
     }
 return (
     <div className="todo-wrapper">   
