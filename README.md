@@ -1,24 +1,25 @@
-# React + Vite
+# Todo List - React Router - Santiago Guzman Castaño
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación de lista de tareas (To-Do List) construida con React y React Router.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Agregar tareas con el botón "Guardar" o presionando Enter
+- El input se limpia automáticamente al guardar
+- Eliminar tareas con el botón ✕ o con el checkbox
+- Animación CSS al agregar tareas
+- Navegación entre páginas con React Router
 
-## React Compiler
+## Tecnologías
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- React Router
+- Vite
+- CSS
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
-
-## start
+## Cómo correr el proyecto
 
 ```bash
-npm i
+npm install
 npm run dev
 ```
